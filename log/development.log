@@ -1609,3 +1609,18 @@ Processing by HomesController#read as HTML
 Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.1ms)
 
 
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (1.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "numb", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test"], ["content", "테스트"], ["numb", 1], ["created_at", "2019-07-05 16:57:46.517050"], ["updated_at", "2019-07-05 16:57:46.517050"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "numb", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test1"], ["content", "테스트"], ["numb", 2], ["created_at", "2019-07-05 16:58:04.319779"], ["updated_at", "2019-07-05 16:58:04.319779"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "numb", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test2"], ["content", "테스트"], ["numb", 3], ["created_at", "2019-07-05 16:58:16.529316"], ["updated_at", "2019-07-05 16:58:16.529316"]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "numb", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test"], ["content", "테스트"], ["numb", 4], ["created_at", "2019-07-05 16:58:35.108137"], ["updated_at", "2019-07-05 16:58:35.108137"]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
