@@ -1,0 +1,21 @@
+<h1>Homes#read</h1>
+<p>Find me in app/views/homes/read.html.erb</p>
+
+<% @posts.each do |x| %>
+    id: <%= x.id %> <br>
+    제목: <%= x.title %> <br>
+    내용: <%= x.content %> <br>
+    번호: <%= x.numb %> <br>
+    <a href="/homes/edit/<%= x.id%>">수정하기</a>
+    <a href="/homes/delete/<%= x.id%>">삭제하기</a>
+    <hr>
+    
+<% end %>
+
+
+
+
+
+
+
+
